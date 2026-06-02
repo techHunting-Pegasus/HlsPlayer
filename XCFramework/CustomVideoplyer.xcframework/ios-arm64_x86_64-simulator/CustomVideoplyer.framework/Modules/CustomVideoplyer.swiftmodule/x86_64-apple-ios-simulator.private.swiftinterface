@@ -1,0 +1,224 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CustomVideoplyer
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+import AVFoundation
+import Foundation
+import Network
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@available(iOS 13.0, *)
+@_Concurrency.MainActor @preconcurrency public struct CustomVideoPlayerSwiftUIView : SwiftUI.UIViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init(player: AVFoundation.AVPlayer, videoGravity: AVFoundation.AVLayerVideoGravity = .resizeAspect, qualityOptions: [CustomVideoplyer.CustomVideoQualityOption]? = nil, landscapeCustomButtons: [UIKit.UIButton]? = nil, controlIcons: [CustomVideoplyer.CustomVideoPlayerIconRole : UIKit.UIImage]? = nil, controlTintColors: [CustomVideoplyer.CustomVideoPlayerControlButton : UIKit.UIColor]? = nil, liveAtEdgeColor: UIKit.UIColor? = nil, liveGoLiveColor: UIKit.UIColor? = nil, playerTitle: Swift.String? = nil, playerTitleColor: UIKit.UIColor? = nil, playerTitleFont: UIKit.UIFont? = nil, controlsGradientTopColor: UIKit.UIColor? = nil, controlsGradientBottomColor: UIKit.UIColor? = nil, isCustomSettingDesign: Swift.Bool = false, settingsAppearance: CustomVideoplyer.CustomVideoPlayerSettingsAppearance? = nil, settingsCloseButtonAppearance: CustomVideoplyer.CustomVideoPlayerSettingsCloseButtonAppearance? = nil, seekSliderActiveTrackColor: UIKit.UIColor? = nil, seekSliderInactiveTrackColor: UIKit.UIColor? = nil, seekSliderThumbColor: UIKit.UIColor? = nil, seekSliderThumbImage: UIKit.UIImage? = nil, onExpandTapped: (() -> Swift.Void)? = nil, onControlsVisibilityChanged: ((Swift.Bool) -> Swift.Void)? = nil, onPlaybackStatusChanged: ((CustomVideoplyer.CustomVideoPlayerPlaybackStatus) -> Swift.Void)? = nil, onTimelineChanged: ((CustomVideoplyer.CustomVideoPlayerTimeline) -> Swift.Void)? = nil, onPlaybackError: (((any Swift.Error)?) -> Swift.Void)? = nil, onStreamURLRefreshRequested: ((_ completion: @escaping (Foundation.URL?) -> Swift.Void) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: CustomVideoplyer.CustomVideoPlayerSwiftUIView.Context) -> CustomVideoplyer.CustomVideoPlayerView
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: CustomVideoplyer.CustomVideoPlayerView, context: CustomVideoplyer.CustomVideoPlayerSwiftUIView.Context)
+  @available(iOS 13.0, *)
+  public typealias Body = Swift.Never
+  @available(iOS 13.0, *)
+  public typealias Coordinator = Swift.Void
+  @available(iOS 13.0, *)
+  public typealias UIViewType = CustomVideoplyer.CustomVideoPlayerView
+}
+public struct CustomVideoQualityOption : Swift.Equatable {
+  public let id: Swift.String
+  public let title: Swift.String
+  public let peakBitRate: Swift.Double
+  public init(id: Swift.String, title: Swift.String, peakBitRate: Swift.Double)
+  public static let auto: CustomVideoplyer.CustomVideoQualityOption
+  public static func == (a: CustomVideoplyer.CustomVideoQualityOption, b: CustomVideoplyer.CustomVideoQualityOption) -> Swift.Bool
+}
+public struct CustomVideoPlayerSettingsAppearance {
+  public var panelBackgroundColor: UIKit.UIColor
+  public var panelBorderColor: UIKit.UIColor
+  public var panelBorderWidth: CoreFoundation.CGFloat
+  public var panelCornerRadius: CoreFoundation.CGFloat
+  public var panelShadowColor: UIKit.UIColor
+  public var panelShadowOpacity: Swift.Float
+  public var panelShadowRadius: CoreFoundation.CGFloat
+  public var panelShadowOffset: CoreFoundation.CGSize
+  public var rowHeight: CoreFoundation.CGFloat
+  public var rowSeparatorColor: UIKit.UIColor
+  public var sectionTitleTextColor: UIKit.UIColor
+  public var sectionTitleFont: UIKit.UIFont
+  public var sectionValueTextColor: UIKit.UIColor
+  public var sectionValueFont: UIKit.UIFont
+  public var optionTextColor: UIKit.UIColor
+  public var optionSelectedTextColor: UIKit.UIColor
+  public var optionFont: UIKit.UIFont
+  public var optionSelectedFont: UIKit.UIFont
+  public var optionCheckmarkColor: UIKit.UIColor
+  public var disclosureIndicatorColor: UIKit.UIColor
+  public var headerTextColor: UIKit.UIColor
+  public var headerFont: UIKit.UIFont
+  public var backButtonTextColor: UIKit.UIColor
+  public var backButtonFont: UIKit.UIFont
+  public var maxHeightRatio: CoreFoundation.CGFloat
+  public init(panelBackgroundColor: UIKit.UIColor = UIColor.black.withAlphaComponent(0.88), panelBorderColor: UIKit.UIColor = UIColor.white.withAlphaComponent(0.14), panelBorderWidth: CoreFoundation.CGFloat = 1, panelCornerRadius: CoreFoundation.CGFloat = 10, panelShadowColor: UIKit.UIColor = .black, panelShadowOpacity: Swift.Float = 0.35, panelShadowRadius: CoreFoundation.CGFloat = 10, panelShadowOffset: CoreFoundation.CGSize = CGSize(width: 0, height: 5), rowHeight: CoreFoundation.CGFloat = 42, rowSeparatorColor: UIKit.UIColor = UIColor.white.withAlphaComponent(0.12), sectionTitleTextColor: UIKit.UIColor = .white, sectionTitleFont: UIKit.UIFont = .systemFont(ofSize: 14, weight: .medium), sectionValueTextColor: UIKit.UIColor = UIColor.white.withAlphaComponent(0.88), sectionValueFont: UIKit.UIFont = .systemFont(ofSize: 13, weight: .regular), optionTextColor: UIKit.UIColor = UIColor.white.withAlphaComponent(0.86), optionSelectedTextColor: UIKit.UIColor = .white, optionFont: UIKit.UIFont = .systemFont(ofSize: 14, weight: .regular), optionSelectedFont: UIKit.UIFont = .systemFont(ofSize: 14, weight: .semibold), optionCheckmarkColor: UIKit.UIColor = .white, disclosureIndicatorColor: UIKit.UIColor = UIColor.white.withAlphaComponent(0.65), headerTextColor: UIKit.UIColor = .white, headerFont: UIKit.UIFont = .systemFont(ofSize: 14, weight: .semibold), backButtonTextColor: UIKit.UIColor = UIColor.white.withAlphaComponent(0.9), backButtonFont: UIKit.UIFont = .systemFont(ofSize: 13, weight: .medium), maxHeightRatio: CoreFoundation.CGFloat = 0.6)
+}
+public struct CustomVideoPlayerSettingsCloseButtonAppearance {
+  public var image: UIKit.UIImage?
+  public var tintColor: UIKit.UIColor
+  public var backgroundColor: UIKit.UIColor
+  public var borderColor: UIKit.UIColor
+  public var borderWidth: CoreFoundation.CGFloat
+  public var cornerRadius: CoreFoundation.CGFloat
+  public var contentInsets: UIKit.UIEdgeInsets
+  public var size: CoreFoundation.CGSize
+  public var topInset: CoreFoundation.CGFloat
+  public var trailingInset: CoreFoundation.CGFloat
+  public var contentTopSpacing: CoreFoundation.CGFloat
+  public init(image: UIKit.UIImage? = UIImage(systemName: "xmark"), tintColor: UIKit.UIColor = .white, backgroundColor: UIKit.UIColor = .clear, borderColor: UIKit.UIColor = .clear, borderWidth: CoreFoundation.CGFloat = 0, cornerRadius: CoreFoundation.CGFloat = 0, contentInsets: UIKit.UIEdgeInsets = .zero, size: CoreFoundation.CGSize = CGSize(width: 26, height: 26), topInset: CoreFoundation.CGFloat = 8, trailingInset: CoreFoundation.CGFloat = 8, contentTopSpacing: CoreFoundation.CGFloat = 8)
+}
+public enum CustomVideoPlayerControlButton : Swift.CaseIterable, Swift.Hashable {
+  case backward
+  case playPause
+  case forward
+  case cc
+  case settings
+  case expand
+  case videoScale
+  case liveStatus
+  public static func == (a: CustomVideoplyer.CustomVideoPlayerControlButton, b: CustomVideoplyer.CustomVideoPlayerControlButton) -> Swift.Bool
+  public typealias AllCases = [CustomVideoplyer.CustomVideoPlayerControlButton]
+  nonisolated public static var allCases: [CustomVideoplyer.CustomVideoPlayerControlButton] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CustomVideoPlayerIconRole : Swift.CaseIterable, Swift.Hashable {
+  case backward
+  case play
+  case pause
+  case forward
+  case cc
+  case settings
+  case expand
+  case collapse
+  case videoScaleAspect
+  case videoScaleAspectFill
+  public static func == (a: CustomVideoplyer.CustomVideoPlayerIconRole, b: CustomVideoplyer.CustomVideoPlayerIconRole) -> Swift.Bool
+  public typealias AllCases = [CustomVideoplyer.CustomVideoPlayerIconRole]
+  nonisolated public static var allCases: [CustomVideoplyer.CustomVideoPlayerIconRole] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol CustomVideoPlayerControlsVisibilityDelegate : AnyObject {
+  func customVideoPlayerView(_ playerView: CustomVideoplyer.CustomVideoPlayerView, didChangeControlsVisibility isVisible: Swift.Bool)
+}
+public enum CustomVideoPlayerPlaybackStatus : Swift.Equatable {
+  case idle
+  case playing
+  case paused
+  case buffering
+  case ended
+  case failed
+  public static func == (a: CustomVideoplyer.CustomVideoPlayerPlaybackStatus, b: CustomVideoplyer.CustomVideoPlayerPlaybackStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct CustomVideoPlayerTimeline : Swift.Equatable {
+  public let currentTime: Foundation.TimeInterval
+  public let totalTime: Foundation.TimeInterval
+  public let isLive: Swift.Bool
+  public let isAtLiveEdge: Swift.Bool
+  public init(currentTime: Foundation.TimeInterval, totalTime: Foundation.TimeInterval, isLive: Swift.Bool, isAtLiveEdge: Swift.Bool)
+  public static func == (a: CustomVideoplyer.CustomVideoPlayerTimeline, b: CustomVideoplyer.CustomVideoPlayerTimeline) -> Swift.Bool
+}
+public protocol CustomVideoPlayerPlaybackDelegate : AnyObject {
+  func customVideoPlayerView(_ playerView: CustomVideoplyer.CustomVideoPlayerView, didChangePlaybackStatus status: CustomVideoplyer.CustomVideoPlayerPlaybackStatus)
+  func customVideoPlayerView(_ playerView: CustomVideoplyer.CustomVideoPlayerView, didUpdateTimeline timeline: CustomVideoplyer.CustomVideoPlayerTimeline)
+  func customVideoPlayerView(_ playerView: CustomVideoplyer.CustomVideoPlayerView, didReceivePlaybackError error: (any Swift.Error)?)
+}
+extension CustomVideoplyer.CustomVideoPlayerPlaybackDelegate {
+  public func customVideoPlayerView(_ playerView: CustomVideoplyer.CustomVideoPlayerView, didChangePlaybackStatus status: CustomVideoplyer.CustomVideoPlayerPlaybackStatus)
+  public func customVideoPlayerView(_ playerView: CustomVideoplyer.CustomVideoPlayerView, didUpdateTimeline timeline: CustomVideoplyer.CustomVideoPlayerTimeline)
+  public func customVideoPlayerView(_ playerView: CustomVideoplyer.CustomVideoPlayerView, didReceivePlaybackError error: (any Swift.Error)?)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class CustomVideoPlayerView : UIKit.UIView, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc override final public class var layerClass: Swift.AnyClass {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency final public var playerLayer: AVFoundation.AVPlayerLayer {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency final public var player: AVFoundation.AVPlayer? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency final public var videoGravity: AVFoundation.AVLayerVideoGravity {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency final public var onExpandTapped: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency final public var onStreamURLRefreshRequested: ((_ completion: @escaping (Foundation.URL?) -> Swift.Void) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency weak final public var controlsVisibilityDelegate: (any CustomVideoplyer.CustomVideoPlayerControlsVisibilityDelegate)?
+  @_Concurrency.MainActor @preconcurrency final public var onControlsVisibilityChanged: ((Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency weak final public var playbackDelegate: (any CustomVideoplyer.CustomVideoPlayerPlaybackDelegate)?
+  @_Concurrency.MainActor @preconcurrency final public var onPlaybackStatusChanged: ((CustomVideoplyer.CustomVideoPlayerPlaybackStatus) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency final public var onTimelineChanged: ((CustomVideoplyer.CustomVideoPlayerTimeline) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency final public var onPlaybackError: (((any Swift.Error)?) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency final public var qualityOptions: [CustomVideoplyer.CustomVideoQualityOption] {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency final public var isCustomSettingDesign: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency final public var selectedQualityID: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency final public var selectedPlaybackSpeed: Swift.Float {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency final public var isControlsContentVisible: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency final public var playbackStatus: CustomVideoplyer.CustomVideoPlayerPlaybackStatus {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency final public var timeline: CustomVideoplyer.CustomVideoPlayerTimeline {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override final public func didMoveToWindow()
+  @_Concurrency.MainActor @preconcurrency public init(player: AVFoundation.AVPlayer? = nil, videoGravity: AVFoundation.AVLayerVideoGravity = .resizeAspect)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency final public func setVideoURL(_ url: Foundation.URL)
+  @_Concurrency.MainActor @preconcurrency final public func setSelectedQuality(id: Swift.String)
+  @_Concurrency.MainActor @preconcurrency final public func setSelectedPlaybackSpeed(_ speed: Swift.Float)
+  @_Concurrency.MainActor @preconcurrency final public func play()
+  @_Concurrency.MainActor @preconcurrency final public func pause()
+  @_Concurrency.MainActor @preconcurrency final public func stop()
+  @_Concurrency.MainActor @preconcurrency final public func setLandscapeCustomButtons(_ buttons: [UIKit.UIButton])
+  @_Concurrency.MainActor @preconcurrency final public func setControlImage(_ image: UIKit.UIImage?, for role: CustomVideoplyer.CustomVideoPlayerIconRole)
+  @_Concurrency.MainActor @preconcurrency final public func setControlTintColor(_ color: UIKit.UIColor?, for button: CustomVideoplyer.CustomVideoPlayerControlButton)
+  @_Concurrency.MainActor @preconcurrency final public func setLiveStatusTitleColors(atLiveEdge: UIKit.UIColor, goLive: UIKit.UIColor)
+  @_Concurrency.MainActor @preconcurrency final public func setPlayerTitle(_ title: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency final public func setPlayerTitleTextColor(_ color: UIKit.UIColor?)
+  @_Concurrency.MainActor @preconcurrency final public func setPlayerTitleFont(_ font: UIKit.UIFont?)
+  @_Concurrency.MainActor @preconcurrency final public func setControlsGradientColors(top: UIKit.UIColor?, bottom: UIKit.UIColor?)
+  @_Concurrency.MainActor @preconcurrency final public func setSettingsAppearance(_ appearance: CustomVideoplyer.CustomVideoPlayerSettingsAppearance?)
+  @_Concurrency.MainActor @preconcurrency final public func setSettingsCloseButtonAppearance(_ appearance: CustomVideoplyer.CustomVideoPlayerSettingsCloseButtonAppearance?)
+  @_Concurrency.MainActor @preconcurrency final public func setCustomSettingDesignEnabled(_ isEnabled: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency final public func setSeekSliderTrackColors(active: UIKit.UIColor?, inactive: UIKit.UIColor?)
+  @_Concurrency.MainActor @preconcurrency final public func setSeekSliderThumbColor(_ color: UIKit.UIColor?)
+  @_Concurrency.MainActor @preconcurrency final public func setSeekSliderThumbImage(_ image: UIKit.UIImage?)
+  @_Concurrency.MainActor @preconcurrency @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+}
+@available(iOS 13.0, *)
+extension CustomVideoplyer.CustomVideoPlayerSwiftUIView : Swift.Sendable {}
+extension CustomVideoplyer.CustomVideoPlayerPlaybackStatus : Swift.Hashable {}
