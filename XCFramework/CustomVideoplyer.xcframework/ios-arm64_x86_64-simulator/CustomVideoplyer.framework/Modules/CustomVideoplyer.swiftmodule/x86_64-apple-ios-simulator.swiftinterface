@@ -213,6 +213,9 @@ extension CustomVideoplyer.CustomVideoPlayerPlaybackDelegate {
     get
     set
   }
+  @_Concurrency.MainActor @preconcurrency final public var isPictureInPicturePossible: Swift.Bool {
+    get
+  }
   @_Concurrency.MainActor @preconcurrency final public var selectedQualityID: Swift.String {
     get
   }

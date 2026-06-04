@@ -10,11 +10,11 @@
 		</data>
 		<key>Modules/CustomVideoplyer.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		nsE99i8BxKEVw55QsH2I6ehbj1Y=
+		NEL71/7bIb7ZP6XOWWK9J/42C1o=
 		</data>
 		<key>Modules/CustomVideoplyer.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		rLSc40iDu9x4vGf4kSJSEP+xxkk=
+		UATj6u6xXKyt83Lh0Vi3geLeF7Q=
 		</data>
 		<key>Modules/CustomVideoplyer.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/CustomVideoplyer.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rLSc40iDu9x4vGf4kSJSEP+xxkk=
+		UATj6u6xXKyt83Lh0Vi3geLeF7Q=
 		</data>
 		<key>Modules/CustomVideoplyer.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ryv/s/39Z9BE/xdPcU2+sBF5O7k=
+		nPXxGaPvYV5z1mjdiOddHGdE0kk=
 		</data>
 		<key>Modules/CustomVideoplyer.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		nsE99i8BxKEVw55QsH2I6ehbj1Y=
+		NEL71/7bIb7ZP6XOWWK9J/42C1o=
 		</data>
 		<key>Modules/CustomVideoplyer.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5LVfZZbSSKGlNg4WwVYPbRZrSgk=
+		9kVWedotxu/4hAD9ZoAz3JJ82EE=
 		</data>
 		<key>Modules/CustomVideoplyer.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/CustomVideoplyer.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5LVfZZbSSKGlNg4WwVYPbRZrSgk=
+		9kVWedotxu/4hAD9ZoAz3JJ82EE=
 		</data>
 		<key>Modules/CustomVideoplyer.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8qmbpWRqU2ny/+TjzIoyPpmiKdk=
+		FjCU6a8DVmGLFCaDBNgqWO3eFFU=
 		</data>
 		<key>buildcommand.md</key>
 		<data>
@@ -59,14 +59,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			46RpvDTSsJlj6e1s4I2f5E2QlldEnSjDd0IeozfLy3o=
+			fDQj9zPVKZPUDu/G1RC1ThJMFRd1LZzOsuZeC0qYdUg=
 			</data>
 		</dict>
 		<key>Modules/CustomVideoplyer.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tLvwgRBwg4If13LZddKRcxS03DblokMc0m3b1WXefYo=
+			pqFfpCp365mhuIRxZp6YGNHCXKxplS8XIxsopDNhIWw=
 			</data>
 		</dict>
 		<key>Modules/CustomVideoplyer.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -80,28 +80,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tLvwgRBwg4If13LZddKRcxS03DblokMc0m3b1WXefYo=
+			pqFfpCp365mhuIRxZp6YGNHCXKxplS8XIxsopDNhIWw=
 			</data>
 		</dict>
 		<key>Modules/CustomVideoplyer.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5v35plrD/vmnRlugE1O3dKz38gMw139zq0M0aN4OLCU=
+			xI5Cjid8lhXk7Ue3n0LLpuEDyxlHr0oE4QAeUzpnFII=
 			</data>
 		</dict>
 		<key>Modules/CustomVideoplyer.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			46RpvDTSsJlj6e1s4I2f5E2QlldEnSjDd0IeozfLy3o=
+			fDQj9zPVKZPUDu/G1RC1ThJMFRd1LZzOsuZeC0qYdUg=
 			</data>
 		</dict>
 		<key>Modules/CustomVideoplyer.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CkzZ9PHTDmnUBWHg3ZM1yHX2G+4cQtFu/fe+54zNq3c=
+			DdNmV6nXbXO/FCmD4iFMjE3KCNEZU584tBCZ8Ui07qU=
 			</data>
 		</dict>
 		<key>Modules/CustomVideoplyer.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -115,14 +115,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CkzZ9PHTDmnUBWHg3ZM1yHX2G+4cQtFu/fe+54zNq3c=
+			DdNmV6nXbXO/FCmD4iFMjE3KCNEZU584tBCZ8Ui07qU=
 			</data>
 		</dict>
 		<key>Modules/CustomVideoplyer.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZY/0FkH6s6HOEwGoc+LBsoIu6NrmZIuc6T3umUG/xYI=
+			6U96llq6WRwqYVE78A8PxWAjvNE1aDbif/lubgZkpzg=
 			</data>
 		</dict>
 		<key>buildcommand.md</key>
