@@ -3,6 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CustomVideoplyer
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import AVFoundation
+import AVKit
 import Foundation
 import Network
 import Swift
@@ -13,7 +14,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @available(iOS 13.0, *)
 @_Concurrency.MainActor @preconcurrency public struct CustomVideoPlayerSwiftUIView : SwiftUI.UIViewRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init(player: AVFoundation.AVPlayer, videoGravity: AVFoundation.AVLayerVideoGravity = .resizeAspect, qualityOptions: [CustomVideoplyer.CustomVideoQualityOption]? = nil, landscapeCustomButtons: [UIKit.UIButton]? = nil, controlIcons: [CustomVideoplyer.CustomVideoPlayerIconRole : UIKit.UIImage]? = nil, controlTintColors: [CustomVideoplyer.CustomVideoPlayerControlButton : UIKit.UIColor]? = nil, liveAtEdgeColor: UIKit.UIColor? = nil, liveGoLiveColor: UIKit.UIColor? = nil, playerTitle: Swift.String? = nil, playerTitleColor: UIKit.UIColor? = nil, playerTitleFont: UIKit.UIFont? = nil, controlsGradientTopColor: UIKit.UIColor? = nil, controlsGradientBottomColor: UIKit.UIColor? = nil, isCustomSettingDesign: Swift.Bool = false, settingsAppearance: CustomVideoplyer.CustomVideoPlayerSettingsAppearance? = nil, settingsCloseButtonAppearance: CustomVideoplyer.CustomVideoPlayerSettingsCloseButtonAppearance? = nil, seekSliderActiveTrackColor: UIKit.UIColor? = nil, seekSliderInactiveTrackColor: UIKit.UIColor? = nil, seekSliderThumbColor: UIKit.UIColor? = nil, seekSliderThumbImage: UIKit.UIImage? = nil, onExpandTapped: (() -> Swift.Void)? = nil, onControlsVisibilityChanged: ((Swift.Bool) -> Swift.Void)? = nil, onPlaybackStatusChanged: ((CustomVideoplyer.CustomVideoPlayerPlaybackStatus) -> Swift.Void)? = nil, onTimelineChanged: ((CustomVideoplyer.CustomVideoPlayerTimeline) -> Swift.Void)? = nil, onPlaybackError: (((any Swift.Error)?) -> Swift.Void)? = nil, onStreamURLRefreshRequested: ((_ completion: @escaping (Foundation.URL?) -> Swift.Void) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(player: AVFoundation.AVPlayer, videoGravity: AVFoundation.AVLayerVideoGravity = .resizeAspect, qualityOptions: [CustomVideoplyer.CustomVideoQualityOption]? = nil, landscapeCustomButtons: [UIKit.UIButton]? = nil, controlIcons: [CustomVideoplyer.CustomVideoPlayerIconRole : UIKit.UIImage]? = nil, controlTintColors: [CustomVideoplyer.CustomVideoPlayerControlButton : UIKit.UIColor]? = nil, liveAtEdgeColor: UIKit.UIColor? = nil, liveGoLiveColor: UIKit.UIColor? = nil, playerTitle: Swift.String? = nil, playerTitleColor: UIKit.UIColor? = nil, playerTitleFont: UIKit.UIFont? = nil, controlsGradientTopColor: UIKit.UIColor? = nil, controlsGradientBottomColor: UIKit.UIColor? = nil, isCustomSettingDesign: Swift.Bool = false, settingsAppearance: CustomVideoplyer.CustomVideoPlayerSettingsAppearance? = nil, settingsCloseButtonAppearance: CustomVideoplyer.CustomVideoPlayerSettingsCloseButtonAppearance? = nil, seekSliderActiveTrackColor: UIKit.UIColor? = nil, seekSliderInactiveTrackColor: UIKit.UIColor? = nil, seekSliderThumbColor: UIKit.UIColor? = nil, seekSliderThumbImage: UIKit.UIImage? = nil, isMuted: Swift.Bool = false, isPiPModeEnabled: Swift.Bool = true, isCCButtonVisible: Swift.Bool = true, enabledSettingsOptions: Swift.Set<CustomVideoplyer.CustomVideoPlayerSettingsOption> = Set(CustomVideoPlayerSettingsOption.allCases), onExpandTapped: (() -> Swift.Void)? = nil, onControlsVisibilityChanged: ((Swift.Bool) -> Swift.Void)? = nil, onPlaybackStatusChanged: ((CustomVideoplyer.CustomVideoPlayerPlaybackStatus) -> Swift.Void)? = nil, onTimelineChanged: ((CustomVideoplyer.CustomVideoPlayerTimeline) -> Swift.Void)? = nil, onPlaybackError: (((any Swift.Error)?) -> Swift.Void)? = nil, onStreamURLRefreshRequested: ((_ completion: @escaping (Foundation.URL?) -> Swift.Void) -> Swift.Void)? = nil)
   @_Concurrency.MainActor @preconcurrency public func makeUIView(context: CustomVideoplyer.CustomVideoPlayerSwiftUIView.Context) -> CustomVideoplyer.CustomVideoPlayerView
   @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: CustomVideoplyer.CustomVideoPlayerView, context: CustomVideoplyer.CustomVideoPlayerSwiftUIView.Context)
   @available(iOS 13.0, *)
@@ -79,6 +80,7 @@ public enum CustomVideoPlayerControlButton : Swift.CaseIterable, Swift.Hashable 
   case forward
   case cc
   case settings
+  case mute
   case expand
   case videoScale
   case liveStatus
@@ -99,6 +101,8 @@ public enum CustomVideoPlayerIconRole : Swift.CaseIterable, Swift.Hashable {
   case forward
   case cc
   case settings
+  case mute
+  case unmute
   case expand
   case collapse
   case videoScaleAspect
@@ -106,6 +110,21 @@ public enum CustomVideoPlayerIconRole : Swift.CaseIterable, Swift.Hashable {
   public static func == (a: CustomVideoplyer.CustomVideoPlayerIconRole, b: CustomVideoplyer.CustomVideoPlayerIconRole) -> Swift.Bool
   public typealias AllCases = [CustomVideoplyer.CustomVideoPlayerIconRole]
   nonisolated public static var allCases: [CustomVideoplyer.CustomVideoPlayerIconRole] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CustomVideoPlayerSettingsOption : Swift.CaseIterable, Swift.Hashable {
+  case audio
+  case quality
+  case speed
+  case subtitle
+  public static func == (a: CustomVideoplyer.CustomVideoPlayerSettingsOption, b: CustomVideoplyer.CustomVideoPlayerSettingsOption) -> Swift.Bool
+  public typealias AllCases = [CustomVideoplyer.CustomVideoPlayerSettingsOption]
+  nonisolated public static var allCases: [CustomVideoplyer.CustomVideoPlayerSettingsOption] {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
@@ -178,6 +197,22 @@ extension CustomVideoplyer.CustomVideoPlayerPlaybackDelegate {
     get
     set
   }
+  @_Concurrency.MainActor @preconcurrency final public var isMuted: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency final public var isPiPModeEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency final public var isCCButtonVisible: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency final public var enabledSettingsOptions: Swift.Set<CustomVideoplyer.CustomVideoPlayerSettingsOption> {
+    get
+    set
+  }
   @_Concurrency.MainActor @preconcurrency final public var selectedQualityID: Swift.String {
     get
   }
@@ -195,11 +230,18 @@ extension CustomVideoplyer.CustomVideoPlayerPlaybackDelegate {
   }
   @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency @objc override final public func didMoveToWindow()
-  @_Concurrency.MainActor @preconcurrency public init(player: AVFoundation.AVPlayer? = nil, videoGravity: AVFoundation.AVLayerVideoGravity = .resizeAspect)
+  @_Concurrency.MainActor @preconcurrency public init(player: AVFoundation.AVPlayer? = nil, videoGravity: AVFoundation.AVLayerVideoGravity = .resizeAspect, isMuted: Swift.Bool = false, isPiPModeEnabled: Swift.Bool = true, isCCButtonVisible: Swift.Bool = true, enabledSettingsOptions: Swift.Set<CustomVideoplyer.CustomVideoPlayerSettingsOption> = Set(CustomVideoPlayerSettingsOption.allCases))
   @objc deinit
   @_Concurrency.MainActor @preconcurrency final public func setVideoURL(_ url: Foundation.URL)
   @_Concurrency.MainActor @preconcurrency final public func setSelectedQuality(id: Swift.String)
   @_Concurrency.MainActor @preconcurrency final public func setSelectedPlaybackSpeed(_ speed: Swift.Float)
+  @_Concurrency.MainActor @preconcurrency final public func setMuted(_ muted: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency final public func setPiPModeEnabled(_ isEnabled: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency final public func setCCButtonVisible(_ isVisible: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency final public func setEnabledSettingsOptions(_ options: Swift.Set<CustomVideoplyer.CustomVideoPlayerSettingsOption>)
+  @_Concurrency.MainActor @preconcurrency final public func setSettingsOption(_ option: CustomVideoplyer.CustomVideoPlayerSettingsOption, isEnabled: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency final public func startPictureInPicture()
+  @_Concurrency.MainActor @preconcurrency final public func stopPictureInPicture()
   @_Concurrency.MainActor @preconcurrency final public func play()
   @_Concurrency.MainActor @preconcurrency final public func pause()
   @_Concurrency.MainActor @preconcurrency final public func stop()
