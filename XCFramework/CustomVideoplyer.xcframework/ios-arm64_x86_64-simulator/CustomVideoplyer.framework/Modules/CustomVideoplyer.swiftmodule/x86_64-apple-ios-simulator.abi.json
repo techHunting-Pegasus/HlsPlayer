@@ -36,7 +36,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(player:videoGravity:qualityOptions:landscapeCustomButtons:controlIcons:controlTintColors:liveAtEdgeColor:liveGoLiveColor:playerTitle:playerTitleColor:playerTitleFont:controlsGradientTopColor:controlsGradientBottomColor:isCustomSettingDesign:settingsAppearance:settingsCloseButtonAppearance:seekSliderActiveTrackColor:seekSliderInactiveTrackColor:seekSliderThumbColor:seekSliderThumbImage:isMuted:isPiPModeEnabled:fullscreenInAnotherView:isCCButtonVisible:enabledSettingsOptions:onExpandTapped:onControlsVisibilityChanged:onPlaybackStatusChanged:onTimelineChanged:onPlaybackError:onStreamURLRefreshRequested:)",
+            "printedName": "init(player:videoGravity:qualityOptions:landscapeCustomButtons:controlIcons:controlTintColors:liveAtEdgeColor:liveGoLiveColor:playerTitle:playerTitleColor:playerTitleFont:controlsGradientTopColor:controlsGradientBottomColor:isCustomSettingDesign:settingsAppearance:settingsCloseButtonAppearance:seekSliderActiveTrackColor:seekSliderInactiveTrackColor:seekSliderThumbColor:seekSliderThumbImage:isMuted:isPiPModeEnabled:fullscreenInAnotherView:isCCButtonVisible:enabledSettingsOptions:onExpandTapped:onExpandAction:onControlsVisibilityChanged:onPlaybackStatusChanged:onTimelineChanged:onPlaybackError:onStreamURLRefreshRequested:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -435,6 +435,32 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "((Swift.Bool) -> ())?",
                 "children": [
                   {
@@ -597,8 +623,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16CustomVideoplyer0A22VideoPlayerSwiftUIViewV6player12videoGravity14qualityOptions09landscapeA7Buttons12controlIcons0N10TintColors15liveAtEdgeColor0r6GoLiveU00G5Title0gxU00gX4Font019controlsGradientTopU00z14GradientBottomU002isA13SettingDesign18settingsAppearance29settingsCloseButtonAppearance021seekSliderActiveTrackU0023seekSliderInactiveTrackU0015seekSliderThumbU020seekSliderThumbImage7isMuted16isPiPModeEnabled23fullscreenInAnotherView17isCCButtonVisible015enabledSettingsK014onExpandTapped27onControlsVisibilityChanged23onPlaybackStatusChanged17onTimelineChanged15onPlaybackError27onStreamURLRefreshRequestedACSo8AVPlayerC_So07AVLayercI0aSayAA0aC13QualityOptionVGSgSaySo8UIButtonCGSgSDyAA0acD8IconRoleOSo7UIImageCGSgSDyAA0acD13ControlButtonOSo7UIColorCGSgA28_SgA31_SSSgA31_So6UIFontCSgA31_A31_SbAA0acD18SettingsAppearanceVSgAA0acD29SettingsCloseButtonAppearanceVSgA31_A31_A31_A22_SgS4bShyAA0acD14SettingsOptionOGyycSgySbcSgyAA0acD14PlaybackStatusOcSgyAA0acD8TimelineVcSgys5Error_pSgcSgyy10Foundation3URLVSgccSgtcfc",
-            "mangledName": "$s16CustomVideoplyer0A22VideoPlayerSwiftUIViewV6player12videoGravity14qualityOptions09landscapeA7Buttons12controlIcons0N10TintColors15liveAtEdgeColor0r6GoLiveU00G5Title0gxU00gX4Font019controlsGradientTopU00z14GradientBottomU002isA13SettingDesign18settingsAppearance29settingsCloseButtonAppearance021seekSliderActiveTrackU0023seekSliderInactiveTrackU0015seekSliderThumbU020seekSliderThumbImage7isMuted16isPiPModeEnabled23fullscreenInAnotherView17isCCButtonVisible015enabledSettingsK014onExpandTapped27onControlsVisibilityChanged23onPlaybackStatusChanged17onTimelineChanged15onPlaybackError27onStreamURLRefreshRequestedACSo8AVPlayerC_So07AVLayercI0aSayAA0aC13QualityOptionVGSgSaySo8UIButtonCGSgSDyAA0acD8IconRoleOSo7UIImageCGSgSDyAA0acD13ControlButtonOSo7UIColorCGSgA28_SgA31_SSSgA31_So6UIFontCSgA31_A31_SbAA0acD18SettingsAppearanceVSgAA0acD29SettingsCloseButtonAppearanceVSgA31_A31_A31_A22_SgS4bShyAA0acD14SettingsOptionOGyycSgySbcSgyAA0acD14PlaybackStatusOcSgyAA0acD8TimelineVcSgys5Error_pSgcSgyy10Foundation3URLVSgccSgtcfc",
+            "usr": "s:16CustomVideoplyer0A22VideoPlayerSwiftUIViewV6player12videoGravity14qualityOptions09landscapeA7Buttons12controlIcons0N10TintColors15liveAtEdgeColor0r6GoLiveU00G5Title0gxU00gX4Font019controlsGradientTopU00z14GradientBottomU002isA13SettingDesign18settingsAppearance29settingsCloseButtonAppearance021seekSliderActiveTrackU0023seekSliderInactiveTrackU0015seekSliderThumbU020seekSliderThumbImage7isMuted16isPiPModeEnabled23fullscreenInAnotherView17isCCButtonVisible015enabledSettingsK014onExpandTapped14onExpandAction27onControlsVisibilityChanged23onPlaybackStatusChanged17onTimelineChanged15onPlaybackError27onStreamURLRefreshRequestedACSo8AVPlayerC_So07AVLayercI0aSayAA0aC13QualityOptionVGSgSaySo8UIButtonCGSgSDyAA0acD8IconRoleOSo7UIImageCGSgSDyAA0acD13ControlButtonOSo7UIColorCGSgA29_SgA32_SSSgA32_So6UIFontCSgA32_A32_SbAA0acD18SettingsAppearanceVSgAA0acD29SettingsCloseButtonAppearanceVSgA32_A32_A32_A23_SgS4bShyAA0acD14SettingsOptionOGyycSgA47_ySbcSgyAA0acD14PlaybackStatusOcSgyAA0acD8TimelineVcSgys5Error_pSgcSgyy10Foundation3URLVSgccSgtcfc",
+            "mangledName": "$s16CustomVideoplyer0A22VideoPlayerSwiftUIViewV6player12videoGravity14qualityOptions09landscapeA7Buttons12controlIcons0N10TintColors15liveAtEdgeColor0r6GoLiveU00G5Title0gxU00gX4Font019controlsGradientTopU00z14GradientBottomU002isA13SettingDesign18settingsAppearance29settingsCloseButtonAppearance021seekSliderActiveTrackU0023seekSliderInactiveTrackU0015seekSliderThumbU020seekSliderThumbImage7isMuted16isPiPModeEnabled23fullscreenInAnotherView17isCCButtonVisible015enabledSettingsK014onExpandTapped14onExpandAction27onControlsVisibilityChanged23onPlaybackStatusChanged17onTimelineChanged15onPlaybackError27onStreamURLRefreshRequestedACSo8AVPlayerC_So07AVLayercI0aSayAA0aC13QualityOptionVGSgSaySo8UIButtonCGSgSDyAA0acD8IconRoleOSo7UIImageCGSgSDyAA0acD13ControlButtonOSo7UIColorCGSgA29_SgA32_SSSgA32_So6UIFontCSgA32_A32_SbAA0acD18SettingsAppearanceVSgAA0acD29SettingsCloseButtonAppearanceVSgA32_A32_A32_A23_SgS4bShyAA0acD14SettingsOptionOGyycSgA47_ySbcSgyAA0acD14PlaybackStatusOcSgyAA0acD8TimelineVcSgys5Error_pSgcSgyy10Foundation3URLVSgccSgtcfc",
             "moduleName": "CustomVideoplyer",
             "declAttributes": [
               "Preconcurrency",
@@ -7487,7 +7513,8 @@
               "Preconcurrency",
               "Custom",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -7592,6 +7619,162 @@
                 "declKind": "Accessor",
                 "usr": "s:16CustomVideoplyer0A15VideoPlayerViewC14onExpandTappedyycSgvM",
                 "mangledName": "$s16CustomVideoplyer0A15VideoPlayerViewC14onExpandTappedyycSgvM",
+                "moduleName": "CustomVideoplyer",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onExpandAction",
+            "printedName": "onExpandAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16CustomVideoplyer0A15VideoPlayerViewC14onExpandActionyycSgvp",
+            "mangledName": "$s16CustomVideoplyer0A15VideoPlayerViewC14onExpandActionyycSgvp",
+            "moduleName": "CustomVideoplyer",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16CustomVideoplyer0A15VideoPlayerViewC14onExpandActionyycSgvg",
+                "mangledName": "$s16CustomVideoplyer0A15VideoPlayerViewC14onExpandActionyycSgvg",
+                "moduleName": "CustomVideoplyer",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16CustomVideoplyer0A15VideoPlayerViewC14onExpandActionyycSgvs",
+                "mangledName": "$s16CustomVideoplyer0A15VideoPlayerViewC14onExpandActionyycSgvs",
+                "moduleName": "CustomVideoplyer",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16CustomVideoplyer0A15VideoPlayerViewC14onExpandActionyycSgvM",
+                "mangledName": "$s16CustomVideoplyer0A15VideoPlayerViewC14onExpandActionyycSgvM",
                 "moduleName": "CustomVideoplyer",
                 "implicit": true,
                 "declAttributes": [
@@ -10979,35 +11162,35 @@
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerSwiftUIView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2657,
+      "offset": 2703,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerSwiftUIView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3052,
+      "offset": 3098,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerSwiftUIView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3092,
+      "offset": 3138,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerSwiftUIView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3138,
+      "offset": 3184,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerSwiftUIView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3179,
+      "offset": 3225,
       "length": 4,
       "value": "true"
     },
@@ -11245,462 +11428,462 @@
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "Array",
-      "offset": 11321,
+      "offset": 11517,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 12570,
+      "offset": 12766,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12635,
+      "offset": 12831,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12818,
+      "offset": 13014,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12840,
+      "offset": 13036,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12859,
+      "offset": 13055,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12888,
+      "offset": 13084,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 15044,
+      "offset": 15240,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "Array",
-      "offset": 15729,
+      "offset": 15925,
       "length": 32,
       "value": "[0.5, 0.75, 1.0, 1.25, 1.5, 2.0]"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 15804,
+      "offset": 16000,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "Dictionary",
-      "offset": 15928,
+      "offset": 16124,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "Dictionary",
-      "offset": 16017,
+      "offset": 16213,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 16299,
+      "offset": 16495,
       "length": 4,
       "value": "0.35"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 16515,
+      "offset": 16711,
       "length": 4,
       "value": "0.35"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16848,
+      "offset": 17044,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16933,
+      "offset": 17129,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 17117,
+      "offset": 17313,
       "length": 4,
       "value": "0.88"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17528,
+      "offset": 17724,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17695,
+      "offset": 17891,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17754,
+      "offset": 17950,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 17815,
+      "offset": 18011,
       "length": 4,
       "value": "0.85"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17988,
+      "offset": 18184,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18029,
+      "offset": 18225,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "Array",
-      "offset": 18146,
+      "offset": 18342,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18269,
+      "offset": 18465,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "Array",
-      "offset": 18338,
+      "offset": 18534,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "Array",
-      "offset": 18409,
+      "offset": 18605,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18512,
+      "offset": 18708,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18561,
+      "offset": 18757,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18612,
+      "offset": 18808,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18663,
+      "offset": 18859,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 18920,
+      "offset": 19116,
       "length": 38,
       "value": "\"CustomVideoPlayerView.NetworkMonitor\""
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18997,
+      "offset": 19193,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19037,
+      "offset": 19233,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19077,
+      "offset": 19273,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19119,
+      "offset": 19315,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19167,
+      "offset": 19363,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 19219,
+      "offset": 19415,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19279,
+      "offset": 19475,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 19320,
+      "offset": 19516,
       "length": 21,
       "value": "\"Network is unstable\""
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19380,
+      "offset": 19576,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19429,
+      "offset": 19625,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19485,
+      "offset": 19681,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19535,
+      "offset": 19731,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19886,
+      "offset": 20082,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19938,
+      "offset": 20134,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20006,
+      "offset": 20202,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20212,
+      "offset": 20408,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20261,
+      "offset": 20457,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20314,
+      "offset": 20510,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "Array",
-      "offset": 20369,
+      "offset": 20565,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "Array",
-      "offset": 20499,
+      "offset": 20695,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20543,
+      "offset": 20739,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20974,
+      "offset": 21170,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21171,
+      "offset": 21367,
       "length": 8,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21193,
+      "offset": 21389,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21214,
+      "offset": 21410,
       "length": 13,
       "value": "3"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 28804,
+      "offset": 29000,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 28844,
+      "offset": 29040,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 28890,
+      "offset": 29086,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 28931,
+      "offset": 29127,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 81452,
+      "offset": 81648,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 84981,
+      "offset": 85177,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 97654,
+      "offset": 97850,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 128660,
+      "offset": 128882,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ishpreetsingh\/Desktop\/CustomVideoplyer\/CustomVideoplyer\/CustomVideoPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 128705,
+      "offset": 128927,
       "length": 4,
       "value": "true"
     }
